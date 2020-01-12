@@ -31,6 +31,16 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+	<style>
+		.map {
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+			float: left;
+			border: thin solid #333;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -63,49 +73,51 @@
 					<ul class="site-menu js-clone-nav d-none d-lg-block">
 						<li class="active">
 							<a href="index.html">Inicio</a>
-						</li>
+						</li>						
 						<li><a href="#noticias">Noticias</a></li>
-						<li><a href="galeria.html">Galería</a></li>
+						<li><a href="#conozcanos">Misión-Vision</a></li>
+						<li><a href="#lipsa">Familia LIPSA</a></li>
 						<li><a href="#bases">Bases</a></li>
 						<li class="has-children">
-							<a href="#rutas">Rutas-Horarios</a>
+							<a href="#rutas">Rutas</a>
 							<ul class="dropdown arrow-top">
 								<li class="has-children">
-									<a href="#">La Virginia</a>
+									<a href="#headingOne">La Virginia</a>
 									<ul class="dropdown">
-										<li><a href="#"><span class="text-danger">Ruta 27</span> Pereira</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 27A</span> Caimalito</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 27B</span> Colegios</a></li>
+										<li><a href="#headingOne"><span class="text-danger">Ruta 27</span> Pereira</a></li>
+										<li><a href="#headingTwo"><span class="text-danger">Ruta 27A</span> Caimalito</a></li>
+										<li><a href="#heading3"><span class="text-danger">Ruta 27B</span> Colegios</a></li>
 									</ul>
 								</li>
 								<li class="has-children">
-									<a href="#">Inturcafé</a>
+									<a href="#heading4">Inturcafé</a>
 									<ul class="dropdown">
-										<li><a href="#"><span class="text-danger">Ruta 13</span> Nacederos</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 13A</span> Libertad</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 3</span> Campín</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 3A</span> Salamanca</a></li>
+										<li><a href="#heading4"><span class="text-danger">Ruta 13</span> Nacederos</a></li>
+										<li><a href="#heading5"><span class="text-danger">Ruta 13A</span> Libertad</a></li>
+										<li><a href="#heading6"><span class="text-danger">Ruta 3</span> Campín</a></li>
+										<li><a href="#heading7"><span class="text-danger">Ruta 3A</span> Salamanca</a></li>
+										<li><a href="#heading8"><span class="text-danger">Ruta 3C</span> Campín (La Rebeca)</a></li>
 									</ul>
 								</li>
 								<li class="has-children">
-									<a href="#">Molinos</a>
+									<a href="#heading9">Molinos</a>
 									<ul class="dropdown">
-										<li><a href="#"><span class="text-danger">Ruta 44</span> Expofuturo</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 44A</span> Caimalito</a></li>
+										<li><a href="#heading9"><span class="text-danger">Ruta 44</span> Expofuturo</a></li>
+										<li><a href="#heading10"><span class="text-danger">Ruta 44A</span> Caimalito</a></li>
 									</ul>
 								</li>
 								<li class="has-children">
-									<a href="#">Pinos</a>
+									<a href="#heading11">Pinos</a>
 									<ul class="dropdown">
-										<li><a href="#"><span class="text-danger">Ruta 16</span> Pinos</a></li>
-										<li><a href="#"><span class="text-danger">Ruta 16A</span> Pinos (SENA)</a></li>
+										<li><a href="#heading11"><span class="text-danger">Ruta 16</span> Pinos</a></li>
+										<li><a href="#heading12"><span class="text-danger">Ruta 16A</span> Pinos (SENA)</a></li>
 									</ul>
 								</li>
 								<li class="has-children">
-									<a href="#">Terminal de Pereira</a>
+									<a href="#heading13">Terminal de Pereira</a>
 									<ul class="dropdown">
-										<li><a href="#"><span class="text-danger">Ruta SR</span> Santa Rosa</a></li>
-										<li><a href="#"><span class="text-danger">Ruta MLL</span> Marsella</a></li>
+										<li><a href="#heading13"><span class="text-danger">Ruta SR</span> Santa Rosa</a></li>
+										<li><a href="#heading13"><span class="text-danger">Ruta MLL</span> Marsella</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -113,6 +125,7 @@
 						<li><a href="#tarifas">Tarifas</a></li>
 						<li><a href="#nosotros">Nosotros</a></li>
 						<li><a href="#enlaces">Enlaces de interés</a></li>
+						<li><a href="galeria.html">Galería</a></li>
 						<li><a href="http://204.232.130.227/SOINTTRA/LoginThree.aspx" target="blank">GPS</a></li>
 
 					</ul>
@@ -121,66 +134,6 @@
 		</div>
 
 	</div>
-
-	<div class="site-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 text-center">
-					<div class="site-section-title">
-						<h2>Conózcanos</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<div href="#" class="service text-center">
-						<span class="icon icon-star"></span>
-						<h2 class="service-heading">MISIÓN</h2>
-						<p>Líneas Pereiranas S.A. es una empresa de transporte público de pasajeros, que tiene como
-							finalidad la satisfacción plena de las necesidades y expectativas de nuestros usuarios e
-							inversionistas, basados en los principios que rigen nuestra organización.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div href="#" class="service text-center">
-						<span class="icon icon-star"></span>
-						<h2 class="service-heading">VISIÓN</h2>
-						<p>Líneas Pereiranas S.A. es una empresa de transporte público de pasajeros, que espera en el
-							año 2020 ser reconocida siempre como una organización líder por su excelente servicio;
-							logrando gestionar la adquisición y acreditación de nuevas rutas, con un parque automotor
-							homogéneo y actualizado, con un promedio no mayor de cinco años, participando activamente
-							con inversiones en otros escenarios económicos que redunden en la creación de valor para la
-							empresa.</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div href="#" class="service text-center">
-						<span class="icon icon-star"></span>
-						<h2 class="service-heading">VALORES</h2>
-						<p>Responsabilidad, Trasparencia, Compromiso y Lealtad</p>
-						<h2 class="service-heading">PRINCIPIOS</h2>
-						<p>Seguridad, Accesibilidad, Solidaridad y Formación</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6 col-lg-4">
-					<img src="images/LPsoyyo/stickerLP.jpeg" alt="newLP" style="width: 100%;">
-				</div>
-				<div class="col-md-6 col-lg-4 mx-auto" style="display: flex; align-items: center;">
-					<img src="images/LPsoyyo/LIPSA_SoyYo.jpeg" alt="newLP" style="width: 100%;">
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<img src="images/LPsoyyo/Sticker-LIPSA_SoyYo.jpeg" alt="newLP" style="width: 100%;">
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
 
 	<div class="site-section bg-light" id="noticias">
 		<div class="container mx-auto">
@@ -198,6 +151,20 @@
 
 					<!-- INICIO NOTICIAS -->
 
+					<div class="col mb-4">
+						<div class="card mx-auto" style="width: 18rem;">
+							<img src="images/news/02012020/LP2020_1.png" class="card-img-top" alt="novenasLipsa9">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">02 de Enero de 2020</small></p>
+								<h5 class="card-title">Feliz Año Nuevo para toda la familia LIPSA</h5>
+								<p class="card-text text-justify">Este 2020 esperamos que alcances todas tus metas, que compartas con tus seres
+								queridos, que cada día sea mejor que el anterior y por sobre todo que nos dejes acompañarte y velar por tu seguridad
+								y bienestar a donde vayas.</p>
+								<a href="noticias.html#newYear" class="btn btn-primary">Ver mas...</a>
+							</div>
+						</div>
+					</div>
+					
 					<div class="col mb-4">
 						<div class="card mx-auto" style="width: 18rem;">
 							<img src="images/news/24122019/novenasLPDiaNoveno1.jpeg" class="card-img-top" alt="novenasLipsa9">
@@ -277,10 +244,67 @@
 
 		</div>
 	</div>
+
+	<div class="site-section" id="conozcanos">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-7 text-center">
+					<div class="site-section-title">
+						<h2>Conózcanos</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div href="#" class="service text-center">
+						<span class="icon icon-star"></span>
+						<h2 class="service-heading">MISIÓN</h2>
+						<p>Líneas Pereiranas S.A. es una empresa de transporte público de pasajeros, que tiene como
+							finalidad la satisfacción plena de las necesidades y expectativas de nuestros usuarios e
+							inversionistas, basados en los principios que rigen nuestra organización.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div href="#" class="service text-center">
+						<span class="icon icon-star"></span>
+						<h2 class="service-heading">VISIÓN</h2>
+						<p>Líneas Pereiranas S.A. es una empresa de transporte público de pasajeros, que espera en el
+							año 2020 ser reconocida siempre como una organización líder por su excelente servicio;
+							logrando gestionar la adquisición y acreditación de nuevas rutas, con un parque automotor
+							homogéneo y actualizado, con un promedio no mayor de cinco años, participando activamente
+							con inversiones en otros escenarios económicos que redunden en la creación de valor para la
+							empresa.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div href="#" class="service text-center">
+						<span class="icon icon-star"></span>
+						<h2 class="service-heading">VALORES</h2>
+						<p>Responsabilidad, Trasparencia, Compromiso y Lealtad</p>
+						<h2 class="service-heading">PRINCIPIOS</h2>
+						<p>Seguridad, Accesibilidad, Solidaridad y Formación</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<img src="images/LPsoyyo/stickerLP.jpeg" alt="newLP" style="width: 100%;">
+				</div>
+				<div class="col-md-6 col-lg-4 mx-auto" style="display: flex; align-items: center;">
+					<img src="images/LPsoyyo/LIPSA_SoyYo.jpeg" alt="newLP" style="width: 100%;">
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<img src="images/LPsoyyo/Sticker-LIPSA_SoyYo.jpeg" alt="newLP" style="width: 100%;">
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 
-
-	<div class="site-section site-section-sm bg-light">
+	<div class="site-section site-section-sm bg-light" id="lipsa">
 		<div class="container">
 
 			<div class="row mb-5">
@@ -367,7 +391,7 @@
 		</div>
 	</div>
 
-	<div class="site-section">
+	<div class="site-section" id="servicios">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-7 text-center">
@@ -532,7 +556,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-					<a href="#"><img src="images/galeria/oficina.jpg" alt="Image" class="img-fluid"></a>
+					<a href="#"><img src="images/baseMegabus.jpg" alt="Image" class="img-fluid"></a>
 					<div class="p-4 bg-white">
 						<span class="d-block text-secondary small text-uppercase">Pereira</span>
 						<h2 class="h5 text-black mb-3"><a href="#">Despacho de Contingencia Megabús</a></h2>
@@ -557,11 +581,1069 @@
 					</div>
 					<p>Líneas Pereiranas actualmente cuenta con mas de 40 destinos incluidas las rutas que presta en
 						conjunto con Megabús.</p>
-					<h2 class="h5 text-black mb-3"><a href="#">A continuación podrá conocer un poco nuestras rutas, sus
-							horarios y frecuencias.</a></h2>
+					<h2 class="h5 text-black mb-3">A continuación podrá conocer un poco nuestras rutas, sus
+							horarios y frecuencias.</h2>
 
 				</div>
 			</div>
+
+			<!-- COLLAPSE -->
+
+			<div class="accordion" id="acordeonRutas">
+				<div class="card">
+				  <div class="card-header" id="headingOne">
+					<h2 class="mb-0">
+					  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						Ruta 27: La Virginia - Pereira - La Virginia
+					  </button>
+					</h2>
+				  </div>
+			  
+				  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#acordeonRutas">
+					<div class="card-body">
+						<table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							<thead class="thead-dark text-center">
+								<tr>
+									<th scope="col" width="50%">PROPIEDAD</th>
+									<th scope="col" width="50%">VALOR</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" >ÁMBITO</th>
+									<td class="text-center">AMCO</td>
+								</tr>
+								<tr>
+									<th scope="row" >CÓDIGO</th>
+									<td class="text-center">27</td>
+								</tr>
+								<tr>
+									<th scope="row" >ORIGEN</th>
+									<td class="text-center">La Virginia</td>
+								</tr>
+								<tr>
+									<th scope="row" >DESTINO</th>
+									<td class="text-center">Pereira</td>
+								</tr>
+								<tr>
+									<th scope="row" >HORA INICIO</th>
+									<td class="text-center">04:15</td>
+								</tr>
+								<tr>
+									<th scope="row" >HORA FIN</th>
+									<td class="text-center">22:10</td>
+								</tr>
+								<tr>
+									<th scope="row" >FRECUENCIA</th>
+									<td class="text-center">6 Min</td>
+								</tr>
+								<tr>
+									<th scope="row" >KILÓMETROS</th>
+									<td class="text-center">78,4 Kms</td>
+								</tr>
+								<tr class="text-center">
+									<th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta27','mapRuta27')">MAPA</button></th>
+								</tr>
+								<tr>
+									<th colspan="2">
+										<div>
+											<div id="mapRuta27" class="map"></div>
+											<figure class="mb-4">
+												<!--<img class="rounded mx-auto d-block" alt="RUTA 27" src="images/maps/Ruta 27.jpg" style="width:100%;" />-->
+												<figcaption class="text-success"><h3>Ruta 27</h3></figcaption>
+												<H4 class="text-danger">IDA</H4>
+												<P>UTP, Álamos, Terminal de Transportes, Calle 17, Cra13, INVICO, Calle 13, Cra 4, Cale 28, Cra 6, Avda. Del Rio, Intersección  de Turín, Avda 30 de Agosto, Cerritos, La Virginia (Calle 5- Cra 8- Calle 9- Cra 10- Calle 10- Cra 5- Calle 12- Cra 9- Calle 15- hasta el parque pio doce subiendo por la Calle 15- hasta el control la Virginia).</P>
+												<hr>
+												<H4 class="text-danger">REGRESO</H4>
+												<P>La Virginia, (Calle 15- Cra. 9 A, Calle 12 – Cra. 5 - Transversal 6ta- Calle 7- Cra 8- Calle 8ª- Cra 9, Calle 5), Cerritos, Avda. 30 de Agosto, Turín, Cra 8, Calle 43, Cra 9 bis, Calle 41, Cra 9, Calle 37, Cra 10, Calle 26, Cra 11, Calle 18, Cra 15, Calle 17, Terminal de Transportes, U.T.P.</P>
+											</figure>
+										</div>
+										<div id="mapRuta27"></div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				  </div>
+				</div>
+
+				<div class="card">
+				  <div class="card-header" id="headingTwo">
+					<h2 class="mb-0">
+					  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Ruta 27A: La Virginia - Caimalito - La Virginia
+					  </button>
+					</h2>
+				  </div>
+				  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordeonRutas">
+					<div class="card-body">
+						<table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							<thead class="thead-dark text-center">
+								<tr>
+									<th scope="col" width="50%">PROPIEDAD</th>
+									<th scope="col" width="50%">VALOR</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" >ÁMBITO</th>
+									<td class="text-center">AMCO</td>
+								</tr>
+								<tr>
+									<th scope="row" >CÓDIGO</th>
+									<td class="text-center">27A</td>
+								</tr>
+								<tr>
+									<th scope="row" >ORIGEN</th>
+									<td class="text-center">La Virginia</td>
+								</tr>
+								<tr>
+									<th scope="row" >DESTINO</th>
+									<td class="text-center">Caimalito</td>
+								</tr>
+								<tr>
+									<th scope="row" >HORA INICIO</th>
+									<td class="text-center">06:00</td>
+								</tr>
+								<tr>
+									<th scope="row" >HORA FIN</th>
+									<td class="text-center">19:20</td>
+								</tr>
+								<tr>
+									<th scope="row" >FRECUENCIA</th>
+									<td class="text-center">30 Min</td>
+								</tr>
+								<tr>
+									<th scope="row" >KILÓMETROS</th>
+									<td class="text-center">22,7 Kms</td>
+								</tr>
+								<tr class="text-center">
+									<th scope="row" colspan="2">MAPA</th>
+								</tr>
+								<tr>
+									<th colspan="2">
+										<div>
+											<figure class="mb-4">
+												<img class="rounded mx-auto d-block" alt="RUTA 27A" src="images/maps/Ruta27A.jpg" style="width:100%;" />
+												<figcaption class="text-success"><h3>Ruta 27A</h3></figcaption>
+												<H4 class="text-danger">IDA</H4>
+												<P>La Virginia Vía Balboa, calle 15- Casa de la cultura, Cra. 9 A, Calle 12 – Cra. 5 - Transversal 6ta- Calle 7- Cra 8- Calle 8ª- Cra 9, Calle 5), Variante la Virginia, vía acceso corregimiento de Caimalito, sede Bomberos, Azufral.</P>
+												<hr>
+												<H4 class="text-danger">REGRESO</H4>
+												<P>Azufral, sede Bomberos, vía principal corregimiento de Caimalito, variante Pereira – La Virginia,  Calle 5, Cra 8,  Calle 9,  Cra 10,  Calle 10, Cra 5,  Calle 12, Cra 9, Calle 15, Casa de la Cultura, vía Balboa.</P>
+											</figure>
+										</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				  </div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading3">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+						  Ruta 27B: La Virginia - Los Colegios - La Virginia
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">27B</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">La Virginia</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Los Colegios</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">HORARIOS DEFINIDOS</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">20,0</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2">MAPA</th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>											
+											  <figure class="mb-4">
+												  <img class="rounded mx-auto d-block" alt="RUTA 27B" src="images/maps/ruta.jpg" style="width:100%;" />
+												  <figcaption class="text-success">Ruta 27B</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Despacho de la Virginia, Los Colegios.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Los Colegios, Despacho de la Virginia.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading4">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+						  Ruta 13: Inturcafé - Nacederos - Inturcafé
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">13</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Inturcafé</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Nacederos</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">04:50</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">21:20</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">12 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">30,0 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta13','mapRuta13')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta13" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 13" src="images/maps/Ruta 13.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 13</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Variante Romelia el Pollo, Ingreso la Graciela, El estanquillo, Vía Romelia el Pollo, retorno Centro Logístico, Campestre C, Campestre B, Campestre A, Avda. El Ferrocarril, La Popa,  Puente Mosquera, Cra 4ª, Calle 36, Cra 6, Avda. Del Río, Intersección de Turín, Avda. 30 de agosto, Nacederos,  la Libertad, Matecaña, la Libertad, Aeropuerto.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Aeropuerto,  Avda. 30 de Agosto, Glorieta a Cuba, Avda. 30 de Agosto, Intersección de Turín, Cra 8, Calle 43, Cra 9bis, calle 41, carrera 9ª,  Calle 38, carrera 5ª, calle 33, Cra 3ª, Calle 26, Cra 5ª, Calle 10, Cra 4ª, Puente Mosquera, La popa, Avda. El Ferrocarril, Campestre A, Campestre B, Campestre C, Vía Romelia el Pollo, El Estanquillo, Variante Romelia el Pollo, retorno Centro Logístico, Ingreso la Graciela.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading5">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+						  Ruta 13A: Inturcafé - La Libertad - Inturcafé
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">13A</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Inturcafé</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">La Libertad</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">04:50</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">21:20</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">12 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">30,0 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta13A','mapRuta13A')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta13A" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 13A" src="images/maps/Ruta 13A.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 13A</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Variante Romelia el Pollo (Ingreso la Graciela), El Estanquillo, Vía Romelia el Pollo, retorno Centro Logístico, Campestre C, Campestre B, Campestre A, Avda. El Ferrocarril, La Popa,  Puente Mosquera, Carrera 4ª, Calle 36, Carrera 6, Avda. Del Río, Intersección de Turín, Avda. 30 de agosto, Nacederos,  la Libertad, Matecaña, Obelisco,  Avda. 30 de Agosto Hospital Mental, Retorno Calle 98.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Avda. 30 de Agosto,  Intersección de Turín, Carrera 8, Calle 43, Carrera 9bis, calle 41, carrera 9ª,  Calle 38, carrera 5ª, calle 33, Carrera 3ª, Calle 26, Carrera 5ª, Calle 10, Carrera 4ª, Puente Mosquera, La popa, Avda. El Ferrocarril, Campestre A, Campestre B, Campestre C, Vía Romelia el Pollo, El Estanquillo, Variante Romelia el Pollo, retorno Centro Logístico, Ingreso la Graciela.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading6">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+						  Ruta 3: Inturcafé - El Campín - Inturcafé
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">3</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Inturcafé</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">El Campín</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">04:50</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">21:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">15 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">43,8 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta3','mapRuta3')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta3" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 3" src="images/maps/Ruta 3.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 3</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Variante Romelia el Pollo (Ingreso la Graciela), Guaduales, Campestre C, Campestre B, Campestre A, Avda. El Ferrocarril, Puente Mosquera, Cra 4, Calle 14, Avda. Ferrocarril, Cra 12, calle 27, Avda. Belalcazar, calle 14, Terminal de Transportes, Avda. de las Américas, Los cedros, Barrio la Playa, Puente Gamma, Barrio Alfa, Barrio Gamma, Los Corales, Avda. De las Américas, Belmonte, el Campin. Belmonte.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Belmonte, Avda. de las Américas, Glorieta Corales, Av. Américas,  Calle 81, Carrera 25, Gamma, Barrio San Fernando, la Playa, Avda. De las Américas, Los Cedros, La Dulcera, Vuelta al centro comercial la 14, Terminal de Transportes, Calle 17, INVICO, Calle 14, calle 13, Cra 5ª, Calle 10, Puente Mosquera, La Popa, Avda. El Ferrocarril, Campestre A, Campestre B, Campestre C, Guaduales, Variante Romelia el Pollo retorno Centro Logístico Ingreso la Graciela.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading7">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+						  Ruta 3A: Inturcafé - Salamanca - Inturcafé
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">3A</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Inturcafé</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Salamanca</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">HORARIOS DEFINIDOS</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">40,4 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta3A','mapRuta3A')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta3A" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 3A" src="images/maps/Ruta 3A.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 3A</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Variante Romelia el Pollo (Ingreso la Graciela), Guaduales, Campestre C, Campestre B, Limonar, la Macarena, Avda. El Ferrocarril, La Popa, Puente Mosquera, Carrera 4, Calle 14, Avda. Ferrocarril, Cra 12, calle 27, Avda. Belalcazar, calle 14, Terminal de Transportes, Avda. de las Américas, Los cedros, Barrio la Playa, Puente Gamma, Barrio Alfa, Barrio Gamma, Los Corales, Avda. De las Américas, Glorieta Variante Condina, Urbanización Salamanca.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Urbanización Salamanca, Variante Condina, Nuevo Sol, San Marcos, San Joaquín,  Glorieta Corales, Av. Américas,  Calle 81, Carrera 25, Gamma, Barrio San Fernando, la Playa, Avda. De las Américas, Los Cedros, La Dulcera, Vuelta al centro comercial la 14, Terminal de Transportes, Calle 17, INVICO, Calle 14, calle 13, Cra 5ª, Calle 10, Puente Mosquera, La Popa, Avda. El Ferrocarril, La Macarena, el Limonar, Campestre B, Campestre C, Guaduales, Variante Romelia el Pollo retorno Centro Logístico Ingreso la Graciela.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading8">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+						  Ruta 3C: Inturcafé - El Campín - Inturcafé
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">3C</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Inturcafé</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">El Campín</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">HORARIOS DEFINIDOS</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">47,7 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta3C','mapRuta3C')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta3C" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 3C" src="images/maps/Ruta 3C.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 3C</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Variante Romelia el Pollo (Ingreso la Graciela), Guaduales, Campestre C, Campestre B, Campestre A, Avda. El Ferrocarril, Puente Mosquera, Cra 4, Calle 14, Avda. Ferrocarril, Cra 12, calle 27, Avda. Belalcazar, calle 14, Terminal de Transportes, Avda. de las Américas, Los cedros, Barrio la Playa, Puente Gamma, Barrio Alfa, Barrio Gamma, Los Corales, Avda. De las Américas, Belmonte, el Campin. Belmonte.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Belmonte, Avda. de las Américas, Glorieta Corales, Av. Américas,  Calle 81, Carrera 25, Gamma, Barrio San Fernando, la Playa, Avda. De las Américas, Los Cedros, La Dulcera, Vuelta al centro comercial la 14, Terminal de Transportes, Calle 17, INVICO, Av. Circunvalar, Parque La Rebeca, Av. Circunvalar, Puente Barranquero, Calle 14, calle 13, Cra 5ª, Calle 10, Puente Mosquera, La Popa, Avda. El Ferrocarril, Campestre A, Campestre B, Campestre C, Guaduales, Variante Romelia el Pollo retorno Centro Logístico Ingreso la Graciela.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading9">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+						  Ruta 44: Molinos - Expofuturo - Molinos
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">44</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Molinos</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Expofuturo</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">04:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">21:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">12 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">35,7 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta44','mapRuta44')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta44" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 44" src="images/maps/Ruta 44.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 44</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Los Molinos, Barrio Pablo VI, calle Mz. 19, calle 43, Av. Molinos, Jardín Colonial, Cra 21, La Pradera, Avda. Santa Mónica, Cra 19 A,  La Popa, Puente Mosquera, Carrera 4ª, calle 28, carrera 6ª, Avda. del Río, Intersección de Turín, Avda.  30 de Agosto, calle 50, Maraya,  Jardín I,  Av. Américas, San Fernando, La Playa, Villa Olímpica, Estadio, EXPOFUTURO.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>EXPOFUTURO, Estadio,  Villa Olímpica, San Fernando, La playa, Av. Américas,  Jardín I, Maraya, Calle 50, Intersección de Turín, carrera 8ª, calle 43, carrera 9ª bis, calle 41, carrera 9ª, calle 38, carrera 5ª, calle 33, carrera 3ª, calle 26,  carrera 5ª, Calle 10, Carrera 4ª, Puente Mosquera, La Popa, Avda. Valher, La Pradera, jardín Colonial, Avda.  los Molinos, calle 43 bis, barrio los molinos iglesia el espíritu Santo, Calle 44, Barrio Pablo VI, el Progreso, Molinos.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading10">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+						  Ruta 44A: Molinos - Caimalito - Molinos
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">44A</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Molinos</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Caimalito</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">04:00, 05:00, 06:00, 11:00, 15:00, 17:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">88,8 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta44A','mapRuta44A')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta44A" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 44A" src="images/maps/Ruta 44A.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 44A</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Los Molinos, Barrio Pablo VI, Manzana. 19, calle 43, Av. Molinos, Jardín Colonial, Cra 21, La Pradera, Avda. Santa Mónica, Cra 19 A,  La Popa, Puente Mosquera, Carrera 4ª, calle 28, carrera 6ª, Avda. del Río, Intersección de Turín, Avda.  30 de Agosto, calle 50, Maraya,  Jardín I,  Av. Américas, San Fernando, La Playa, Villa Olímpica, Estadio, EXPOFUTURO, Av. Américas, MERCASA, Vía Cerritos, Caimalito.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Caimalito, Cerritos, Hospital Mental, Obelisco de la Villa, Cra 17,  San Fernando, La playa, Av. Américas,  Jardín I, Maraya, Calle 50, Intersección de Turín, carrera 8ª, calle 43, carrera 9ª bis, calle 41, carrera 9ª, calle 38, carrera 5ª, calle 33, carrera 3ª, calle 26,  carrera 5ª, Calle 10, Carrera 4ª, Puente Mosquera, La Popa, Avda. Valher, La Pradera, Avda. los Molinos, calle 43 bis, barrio los molinos iglesia el espíritu Santo, Calle 44, Barrio Pablo VI, el Progreso, Molinos.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading11">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+						  Ruta 16: Los Pinos - Frailes - Los Pinos
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">16</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Los Pinos</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Frailes</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">05:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">20:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">60 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">21,6 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta16','mapRuta16')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRuta16" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 16" src="images/maps/Ruta 16.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 16</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>UTP, Álamos, Terminal de Transportes, Calle 17, Cra13, INVICO, Calle 13, Cra 4, Cale 28, Cra 6, Avda. Del Rio, Intersección  de Turín, Avda 30 de Agosto, Cerritos, La Virginia (Calle 5- Cra 8- Calle 9- Cra 10- Calle 10- Cra 5- Calle 12- Cra 9- Calle 15- hasta el parque pio doce subiendo por la Calle 15- hasta el control la Virginia). </P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Frailes, Japón, La Popa, Avda. Simón Bolívar, Avda. Valher, Santa Mónica, Carrera 21, La Pradera, jardín Colonial, Avda. Los Molinos, el Progreso, Los Molinos,  Calle 43, Carrera 18, calle 45, Avda. Simón Bolívar, la Romelia, Bosques de la Acuarela, Los Pinos.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading12">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+						  Ruta 16A: Los Pinos - Frailes (SENA) - Los Pinos
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">AMCO</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">16A</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Los Pinos</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Frailes (SENA)</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">HORARIOS DEFINIDOS</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">28,5 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('Ruta16A','mapRuta16A')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											  <div id="mapRuta16A" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA 16A" src="images/maps/Ruta 16A.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta 16A</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Los Pinos, Bosques de la Acuarela, la Romelia, Avda. Simón  Bolívar, Calle 43, mercados, calle 34, Avda. del Ferrocarril, , calle 32, Transversal 7, Santa Isabel, Diagonal 27A, Transversal 8, Diagonal 26,  Postobón, Jardines de Milán, Avda. de los Molinos, Los lagos, la Violetas, Los Rosales, Santiago Londoño, Frailes.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Frailes, Japón, La Popa, Avda. Simón Bolívar, Avda. Valher, Santa Mónica, Carrera 21, La Pradera, calle 25, glorieta Postobón, diagonal 26, diagonal 25 A, Santa Isabel, transversal 7, carrera 7, calle 32, Avda. Ferrocarril, glorieta Postobón, Avda. Ferrocarril, calle 34 carrera 15 calle 35 Avda. Los Molinos, el Progreso, Los Molinos,  Calle 43, Carrera 18, calle 45, Avda. Simón Bolívar, la Romelia, Bosques de la Acuarela, Los Pinos.</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading13">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+						  Ruta SR: Pereira - Santa Rosa de Cabal - Pereira
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">INTERMUNICIPAL</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">SR</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Terminal de Transportes de Pereira</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Santa Rosa de Cabal</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">04:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">23:00</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">5 Min</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">67,4 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('RutaSR','mapRutaSR')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRutaSR" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA SR" src="images/maps/Ruta SR.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta SR</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Terminal de transportes de Pereira, calle 14, Exito, Av. del Ferrocarril, Viaducto, Dosquebradas, la Romelia, Boquerón, Santa Rosa.</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Santa Rosa, Boquerón, Dosquebradas, Viaducto, Av. del Ferrocarril, El Éxito, Gobernación, La 14, Terminal de transportes de Pereira</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header" id="heading14">
+					  <h2 class="mb-0">
+						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+						  Ruta MLL: Pereira - Marsella - Pereira
+						</button>
+					  </h2>
+					</div>
+					<div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#acordeonRutas">
+					  <div class="card-body">
+						  <table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
+							  <thead class="thead-dark text-center">
+								  <tr>
+									  <th scope="col" width="50%">PROPIEDAD</th>
+									  <th scope="col" width="50%">VALOR</th>
+								  </tr>
+							  </thead>
+							  <tbody>
+								  <tr>
+									  <th scope="row" >ÁMBITO</th>
+									  <td class="text-center">INTERMUNICIPAL</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >CÓDIGO</th>
+									  <td class="text-center">MLL</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >ORIGEN</th>
+									  <td class="text-center">Terminal de Transportes de Pereira</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >DESTINO</th>
+									  <td class="text-center">Marsella</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA INICIO</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >HORA FIN</th>
+									  <td class="text-center">-</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >FRECUENCIA</th>
+									  <td class="text-center">HORARIOS DEFINIDOS</td>
+								  </tr>
+								  <tr>
+									  <th scope="row" >KILÓMETROS</th>
+									  <td class="text-center">39,1 Kms</td>
+								  </tr>
+								  <tr class="text-center">
+									  <th scope="row" colspan="2"><button class="btn btn-primary" onclick="initMap('RutaMarsella','mapRutaMLL')">MAPA</button></th>
+								  </tr>
+								  <tr>
+									  <th colspan="2">
+										  <div>
+											<div id="mapRutaMLL" class="map"></div>
+											  <figure class="mb-4">
+												  <!--<img class="rounded mx-auto d-block" alt="RUTA MLL" src="images/maps/Ruta Marsella.jpg" style="width:100%;" />-->
+												  <figcaption class="text-success">Ruta MARSELLA</figcaption>
+												  <H4 class="text-danger">IDA</H4>
+												  <P>Terminal de transportes de Pereira, Carrera 12, Turín, Combia, La Oriental, Marsella</P>
+												  <hr>
+												  <H4 class="text-danger">REGRESO</H4>
+												  <P>Marsella, La Oriental, Combia, Turín, Av. 30 de Agosto, La 14, Terminal de transportes de Pereira</P>
+											  </figure>
+										  </div>
+									  </th>
+								  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					</div>
+				</div>
+
+			  </div>
+
+			<!-- FIN COLLAPSE -->
+
 			<table class="p-0 m-0 table table-bordered table-striped col-md-12 col-lg-12 col-sm-12">
 				<thead class="thead-dark text-center">
 					<tr>
@@ -572,204 +1654,139 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">27</th>
-						<td>La Virginia</td>
-						<td >6</td>
-					</tr>
-					<tr>
-						<th scope="row">27A</th>
-						<td>La Virginia Interna</td>
-						<td>30</td>
-					</tr>
-					<tr>
-						<th scope="row">27B</th>
-						<td>Ciudad Jardin L6</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<th scope="row">13</th>
-						<td>Nacederos</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<th scope="row">13A</th>
-						<td>La Libertad</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td>El Campín</td>
-						<td>15</td>
-					</tr>
-					<tr>
-						<td>3A</td>
-						<td>Salamanca</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>44</td>
-						<td>Expofuturo</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>44A</td>
-						<td>Caimalito</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>16</td>
-						<td>Frailes</td>
-						<td>60</td>
-					</tr>
-					<tr>
-						<td>16A</td>
-						<td>Frailes (SENA)</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td>SR</td>
-						<td>Santa Rosa de Cabal</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>MLL</td>
-						<td>Marsella</td>
-						<td>-</td>
-					</tr>
-					<tr>
 						<td>4</td>
 						<td>Altagracia</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>5</td>
 						<td>Guayacanes</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>6</td>
 						<td>Morelia</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>7</td>
 						<td>Mercasa</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>8</td>
 						<td>Perla de Sur</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>9</td>
 						<td>San Joaquín</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>10</td>
 						<td>2500 Lotes</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>11</td>
 						<td>Terranova</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>12</td>
 						<td>Dorado</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>13</td>
 						<td>Villa Ligia</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>14</td>
 						<td>Naranjito</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>16</td>
 						<td>Estadio</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>19</td>
 						<td>Montelíbano</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>20</td>
 						<td>Miraflores</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>21</td>
 						<td>San Fernando</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>22</td>
 						<td>Altavista</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>26</td>
 						<td>Salamanca</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>27</td>
 						<td>UTP</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>28</td>
 						<td>La Virginia</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>29</td>
 						<td>Mirador de Llano Grande</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>30</td>
 						<td>Málaga</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>15</td>
 						<td>Belmonte</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>17</td>
 						<td>Galicia</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>18</td>
 						<td>Cerritos</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>23</td>
 						<td>Estadio II</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>24</td>
 						<td>Puerto Caldas</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<td>25</td>
 						<td>Aeropuerto</td>
-						<td>10</td>
+						<td>-</td>
 					</tr>
 					<tr>
 						<th scope="row">TOTAL</th>
@@ -827,7 +1844,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<div class="site-section" id="nosotros">
 		<div class="container">
@@ -1069,8 +2085,6 @@
 		</div>
 	</footer>
 
-	</div>
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -1091,6 +2105,30 @@
 		document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 		//]]>
 	</script>
+
+	<script>
+		var map;
+		function initMap(ruta,elem) {
+		var src = 'http://lineaspereiranas.com/maps/' + ruta + '.kml';
+		map = new google.maps.Map(document.getElementById(elem), {
+			center: new google.maps.LatLng(-19.257753, 146.823688),
+			zoom: 4,
+			mapTypeId: 'satellite'
+		});
+
+		var kmlLayer = new google.maps.KmlLayer(src, {
+			suppressInfoWindows: false,
+			preserveViewport: false,
+			map: map
+		});
+		
+		kmlLayer.addListener('click', function(event) {
+			var content = event.featureData.infoWindowHtml;
+		});
+		}
+  	</script>
+  	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRgAn2UsMKUWIQkF62EL0pxtHS4hW7MsE&callback=initMap" type="text/javascript">
+  	</script>
 		
 
 </body>
